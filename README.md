@@ -1,4 +1,4 @@
-# Pokemon Meta Tracker 🃏
+# Meta Tracker 🃏
 
 > Agregador de meta para TCGs competitivos com foco no público brasileiro.
 > Começando pelo Pokémon TCG, com planos de expansão para Magic, One Piece e outros.
