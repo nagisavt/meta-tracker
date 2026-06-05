@@ -1,36 +1,67 @@
 # Meta Tracker 🃏
 
-> Agregador de meta para TCGs competitivos com foco no público brasileiro.
-> Começando pelo Pokémon TCG, com planos de expansão para Magic, One Piece e outros.
+> A meta aggregator for competitive TCGs focused on the Brazilian market.
 
-## O problema
-Para acompanhar o meta do Pokémon TCG hoje, você precisa navegar por vários
-sites em inglês. Esse projeto unifica essas informações e as traz para o contexto BR.
+Tracking the Pokémon TCG meta today means navigating multiple English-language sites, cross-referencing tournament results, and doing all the work yourself. Meta Tracker brings that information together in one place, in Portuguese, built for the Brazilian competitive scene.
 
-## Funcionalidades planejadas
-- [ ] Ranking de decks estilo "bolsa de valores" (subiu/desceu X posições)
-- [ ] Lista completa dos top 50 decks do meta atual
-- [ ] Decklists usadas em torneios com posições
-- [ ] Suporte futuro a Magic, One Piece, Flesh and Blood
+Starting with Pokémon TCG — with planned expansion to Magic: The Gathering, One Piece, and others.
+
+---
+
+## Planned Features
+
+- **Deck ranking** styled like a stock market — each deck shows position changes (↑3, ↓1) relative to the previous week
+- **Top 50 meta decks** with full decklists
+- **Tournament results** with placements and decklists used
+- **Brazilian-first** — content and context for the local competitive community
+- Future support for Magic: The Gathering, One Piece TCG, and Flesh and Blood
+
+---
 
 ## Stack
-- **Backend:** ASP.NET Core Web API + Hangfire
-- **Frontend:** React + TypeScript
-- **Banco:** PostgreSQL
-- **Infra:** Docker
 
-## Fonte de dados
-API pública do [Limitless TCG](https://docs.limitlesstcg.com/developer.html)
+| Layer | Technology |
+|---|---|
+| Backend | ASP.NET Core Web API |
+| Background jobs | Hangfire |
+| Frontend | React + TypeScript |
+| Database | PostgreSQL |
+| Infrastructure | Docker |
+| Data source | [Limitless TCG public API](https://docs.limitlesstcg.com/developer.html) |
 
-## Documentação
-- [Modelagem do banco](docs/architecture/database-model.png)
-- [Decisões de arquitetura](docs/decisions/)
+---
 
-## Como rodar localmente
+## Architecture
+
+- [Database model](/docs/architecture/database-model.png)
+- [Architecture decisions](/docs/decisions)
+
+---
+
+## How to Run
+
+**Requirements:** Docker installed.
+
 ```bash
 docker-compose up -d
 ```
-*(instruções completas em breve)*
+
+*(full setup instructions coming soon)*
+
+---
 
 ## Status
-🚧 Em desenvolvimento — fase de modelagem e setup inicial
+
+🚧 **In development** — currently in modeling and initial setup phase.
+
+---
+
+## Why This Exists
+
+I play TCGs competitively and got tired of the fragmented experience for Brazilian players. This is a project born from actual frustration with the existing tools — and built with the same stack I use professionally (ASP.NET Core + PostgreSQL), so it's also a sandbox for applying things I learn at work in a context I care about.
+
+---
+
+## Author
+
+[Giovanni Veratacci](https://github.com/nagisavt) — Computer Science student at UTFPR Ponta Grossa & Full Stack Developer
